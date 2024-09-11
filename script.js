@@ -5,7 +5,7 @@ const twitterButton = document.querySelector(".twitter");
 
 const request = new Request("https://api.api-ninjas.com/v1/quotes?category=happiness", {
     method: 'GET',
-    headers: { 'X-Api-Key': 'pOmTq0wUbcQZn8DFQWPqgg==TlIZBr3flOdOJT11'},
+    headers: { 'X-Api-Key': 'ENTER API KEY'},
     contentType: 'image/jpg',
     success: function(result) {
         console.log(result);
