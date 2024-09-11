@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #bbc8fe;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+.quote-container {
+    background-color: 
+    #fefefe;
+    min-width: 700px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.25);
+    padding: 40px;
+}
+
+.quote-container h2 {
+    margin-bottom: 25px;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.quote-container h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+}
+
+.quote-container .quote-app {
+    min-height: 170px;
+    position: relative;
+}
+
+.quote-container .quote-app p {
+    position: absolute;
+    margin-top: 20px;
+    right: 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.quote-container .quote-app h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.quote-container .quote-app p::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #2b77e4;
+    position: absolute;
+    top: 45%;
+    left: -25px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .new-quote {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    background: #2b77e4;
+    border: 1px solid #2b77e4;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.buttons .twitter {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid #2b77e4;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.buttons .twitter .twitter-icon {
+    width: 20px;
+    display: flex;
+    fill: #2b77e4;
+    margin-right: 10px;
+}
